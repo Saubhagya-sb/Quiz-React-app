@@ -52,7 +52,7 @@ const Home = () => {
             >
               <option value="" disabled>Select Category</option>
               {Categories.map((cat) => (
-                <option key={cat.value} value={cat.value}>
+                <option key={cat.value} value={cat.value} className='text-black'>
                   {cat.category}
                 </option>
               ))}
@@ -63,9 +63,9 @@ const Home = () => {
               onChange={(e) => setDifficulty(e.target.value)}
               className="border-2 p-2 rounded text-white"
             >
-              <option value="" disabled>Select Difficulty</option>
+              <option value="" disabled className='text-black'>Select Difficulty</option>
               {difficulties.map((level, idx) => (
-                <option key={idx} value={level}>
+                <option key={idx} value={level} className='text-black'>
                   {level}
                 </option>
               ))}
